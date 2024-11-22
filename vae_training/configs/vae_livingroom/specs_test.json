@@ -1,0 +1,27 @@
+{
+  "Description" : ["Testing VAE for livingrooms with BetaVAERolloutTransformer_room_v1"],
+  
+  "training_task": "vae_sdfroom",
+
+  "decoder_config": {
+    "decoder_type" : "sdfvroid",
+    "config_json" : "triplane_fitting/all_livingroom.json"
+  },
+
+  "vae_config": {
+    "vae_type" : "BetaVAERolloutTransformer_room_v1",
+    "kl_std" : 0.25,
+    "kl_weight" : 0.001,
+    "plane_shape" : [3, 32, 224, 224],
+    "z_shape" : [4, 56, 56],
+    "num_heads": 16
+    },
+
+  "sem_labels" : {
+    "0": "mesh",
+    "1": "cabinet",
+    "2": "chair",
+    "3": "sofa",
+    "4": "table"
+  }
+}

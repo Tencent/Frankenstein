@@ -1,0 +1,12 @@
+{
+  "_class_name": "DDPMPipelineTriplane",
+  "_diffusers_version": "0.22.0.dev0",
+  "scheduler": [
+    "diffusers",
+    "DDPMScheduler"
+  ],
+  "unet": [
+    "diffusers",
+    "UNet2DModel"
+  ]
+}
