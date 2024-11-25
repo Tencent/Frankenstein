@@ -56,6 +56,7 @@ python test_diff.py -e diff_denoising/configs/diff_bedroom/ -u painting_bedroom/
 # decode to 3D mesh
 python test_latents.py -e vae_training/configs/vae_bedroom/ -s -l diff_denoising/configs/diff_bedroom/triplane_xxxxxx/
 ```
+Additional examples can be selected from diff_denoising/semimg_bedroom.json.
 
 For livingroom (layout condition + wall remeshing):
 ```bash
@@ -69,6 +70,7 @@ python test_diff.py -e diff_denoising/configs/diff_livingroom/ -u painting_livin
 # decode to 3D mesh ('-w' activate the wall remeshing algorithm)
 python test_latents.py -e vae_training/configs/vae_livingroom/ -w -l diff_denoising/configs/diff_livingroom/triplane_xxxxxx/
 ```
+Additional examples can be selected from diff_denoising/semimg_livingroom.json.
 
 For avatar (uncondition):
 ```bash
